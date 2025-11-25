@@ -8,13 +8,12 @@ bool isPrime(int n){
         if(n%i==0) return 0;break;}
     return 1;
 
-
 }
 
 int main() {
     int n=0,a=0,b=0;
     cin >> n;
-    for(int i=2;i<n/2;i++){
+    for(int i=2;i<=n/2;i++){
         if(isPrime(i)==1){
         a=i;
         b=n-i;
